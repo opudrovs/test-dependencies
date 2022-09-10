@@ -1,13 +1,12 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  name: frontend
+  name: kustomizationb
 spec:
   dependsOn:
-    - name: common
-    - name: backend
+    - name: kustomizationa
   interval: 5m
-  path: "./deploy/webapp/frontend/"
+  path: "./deploy/webapp/backend/"
   prune: true
   sourceRef:
     kind: GitRepository
@@ -15,6 +14,6 @@ spec:
   validation: server
   healthChecks:
     - kind: Deployment
-      name: frontend
+      name: backend
       namespace: webapp
   timeout: 2m
