@@ -5,6 +5,7 @@ metadata:
 spec:
   dependsOn:
     - name: kustomizationa
+      namespace: namespace1
   interval: 5m
   path: "./deploy/webapp/frontend/"
   prune: true
