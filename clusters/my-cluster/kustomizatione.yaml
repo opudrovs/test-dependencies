@@ -6,9 +6,9 @@ metadata:
 spec:
   dependsOn:
     - name: kustomizationa
-      namespace: default
+      namespace: namespace3
     - name: kustomization1
-      namespace: default
+      namespace: namespace3
   interval: 5m
   path: "./deploy/webapp/backend/"
   prune: true
