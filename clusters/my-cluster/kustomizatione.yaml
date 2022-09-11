@@ -6,6 +6,7 @@ metadata:
 spec:
   dependsOn:
     - name: kustomizationa
+      namespace: default
     - name: kustomization1
       namespace: default
   interval: 5m
