@@ -6,7 +6,7 @@ metadata:
 spec:
   dependsOn:
     - name: kustomizationa
-      namespace: namespace3
+      namespace: namespace1
     - name: kustomization1
       namespace: namespace3
   interval: 5m
