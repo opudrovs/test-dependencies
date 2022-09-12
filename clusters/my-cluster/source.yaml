@@ -2,6 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: webapp
+  namespace: webapp
 spec:
   interval: 10m
   url: https://github.com/stefanprodan/podinfo
